@@ -1,0 +1,197 @@
+/* layout */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  width: 100%;
+  height: 56px;
+  background-color: darkcyan;
+  z-index: 99;
+}
+.header-logo {
+  display: flex;
+}
+.header-logo > h3 {
+  display: none;
+  margin-right: 16px;
+}
+.footer {
+  padding: 24px;
+  text-align: center;
+  background-color: cadetblue;
+}
+.main {
+  padding-top: 56px;
+  flex: 1;
+  background-color: #edf4f4;
+}
+.avatar {
+  /* background-image: url("../public/kisspng-computer-icons-portable-network-graphics-avatar-ic-5ba3c66e306b15.0756271715374598221983.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.nav-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+.nav-link-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  height: 100%;
+}
+.nav-link-item:hover {
+  background-color: red;
+  transition: all 1s;
+}
+.sub-nav {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  display: none;
+  width: 150px;
+  background-color: red;
+  z-index: 1;
+}
+.nav-link-item:hover .sub-nav {
+  display: block;
+}
+.sub-nav-item {
+  padding: 8px;
+}
+.sub-nav-item:hover {
+  background-color: yellow;
+}
+/* list */
+.list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+.list-filter {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+}
+.list-container {
+  flex: 1;
+}
+.item-wrapper {
+  width: calc(100% / 3);
+  padding: 8px;
+}
+.item-card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+}
+.item-card:hover {
+  box-shadow: 4px 6px 10px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+.card-image-wrapper {
+  position: relative;
+  padding-top: 133.3%;
+  width: 100%;
+  overflow: hidden;
+}
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/modern-gold-background-free-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item-card-content {
+  padding: 8px;
+  background-color: white;
+}
+.item-sale {
+  position: absolute;
+  top: -55px;
+  left: -55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 4px 4px;
+  width: 100px;
+  background-color: red;
+  color: white;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+.back-to-top {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.item-card:hover .card-image {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.item-card::after {
+  content: "NEW";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 8px 16px;
+  background-color: red;
+}
+
+.list-item1 {
+  position: relative;
+}
+
+.btn_showmore {
+  border-color: #5578d9;
+  margin: 24px auto 8px;
+}
+
+.d-flex {
+  padding-bottom: 16px;
+}
+
+.btn-group {
+  width: 40%;
+  background-color: #fff;
+}
+
+.btn {
+  background-color: #fff;
+  color: black;
+}
