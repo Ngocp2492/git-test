@@ -9,7 +9,7 @@ function App() {
     <body>
       <div className="header">
         <div className="header-logo">
-          <h3>Menu Icon</h3>
+          <h3>Menu Icon 123</h3>
           <a href="home.html">
             <h3>Logo</h3>
           </a>
