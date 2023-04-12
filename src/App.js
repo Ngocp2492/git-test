@@ -9,15 +9,15 @@ function App() {
     <body>
       <div className="header">
         <div className="header-logo">
-          <h3>Menu Icon</h3>
+          <h3>Menu Icon 123</h3>
           <a href="home.html">
-            <h3>Logo</h3>
+            <h3>Logo new</h3>
           </a>
         </div>
         <div className="nav-link">
           <div className="nav-link-item">
             <a href="list.html">
-              <h4>List</h4>
+              <h4>List new</h4>
             </a>
             <div className="sub-nav">
               <div className="sub-nav-item">Item 1</div>
