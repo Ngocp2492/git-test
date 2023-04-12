@@ -11,7 +11,7 @@ function App() {
         <div className="header-logo">
           <h3>Menu Icon</h3>
           <a href="home.html">
-            <h3>Logo</h3>
+            <h3>Logo 123</h3>
           </a>
         </div>
         <div className="nav-link">
